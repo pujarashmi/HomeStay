@@ -1,15 +1,15 @@
 'use client';
 
-// import { SafeUser } from "@/app/types";
-import { User } from "@prisma/client";
+import { SafeUser } from "@/app/types";
 
 import Container from "../Container";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
 
+// here we are using SafeUser bcz it's giving the error of date type and in safe file, we are just converting the type into string. So here i have satitize the current user
 interface NavProps {
-  currentUser?: User | null
+  currentUser?: SafeUser | null
 }
 
 const Nav: React.FC<NavProps> = ({
