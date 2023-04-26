@@ -1,4 +1,4 @@
-// This is your Prisma schema file,
+// This is your Prisma schema file, it contain schema of all the collection. after completin this file, push it into mongo server. all table will be created
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {

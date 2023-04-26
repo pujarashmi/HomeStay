@@ -6,6 +6,7 @@ import Container from "../Container";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
+import Categories from "./Categories";
 
 // here we are using SafeUser bcz it's giving the error of date type and in safe file, we are just converting the type into string. So here i have satitize the current user
 interface NavProps {
@@ -40,6 +41,7 @@ const Nav: React.FC<NavProps> = ({
           </div>
         </Container>
       </div>
+      <Categories />
     </div>
   )
 }
